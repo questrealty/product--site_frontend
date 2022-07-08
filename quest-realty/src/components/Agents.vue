@@ -1,16 +1,25 @@
 <template>
   <div class="container">
     <h3>Agents and Partners</h3>
-    <div class="image__container">
-      <div class="agents-1">
-        <img src="../assets/Frame-299-1.png" alt="" class="image1" />
-        <img src="../assets/Frame-300-1.png" alt="" class="image2" />
+    <div class="width-regulator">
+      <div class="image__container">
+        <div class="image one">
+          <img src="../assets/Frame-299-1.png" alt="" />
+        </div>
+        <div class="image two">
+          <img src="../assets/Frame-301-1.png" alt="" />
+        </div>
+        <div class="image three">
+          <img src="../assets/Frame-302.png" alt="" />
+        </div>
+        <div class="image five">
+          <img src="../assets/Frame-300-1.png" alt="" />
+        </div>
       </div>
+    </div>
 
-      <div class="agents-2">
-        <img src="../assets/Frame-302.png" alt="" class="image3" />
-        <img src="../assets/Frame-301-1.png" alt="" class="image4" />
-      </div>
+    <div class="btn-container">
+      <button class="more-contacts">View more contacts</button>
     </div>
   </div>
 </template>
@@ -39,41 +48,58 @@ h3 {
   margin-bottom: 64px;
 }
 
+.width-regulator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
 .image__container {
   display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
-}
-.agents-1,
-.agents-2 {
+  flex-wrap: wrap;
   width: 100%;
-  display: flex;
   justify-content: space-between;
-  margin-bottom: 24px;
+}
+.image {
+  flex: 1 1 50%;
+  text-align: center;
 }
 
-img {
-  max-width: 150px;
+.btn-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 60px;
 }
 
-@media (min-width: 460px) {
-  img {
-    max-width: 250px;
-  }
+.more-contacts {
+  background-color: #6d553e;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
-@media (min-width: 640px) {
+.more-contacts:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 786px) {
+@media (min-width: 1024px) {
   .container {
-    padding: 74px 80px;
+    padding: 74px 40px;
   }
-  img {
-    max-width: 200px;
+
+  .width-regulator {
+    padding: 0;
   }
-  .image__container {
-    flex-direction: row;
+
+  .image {
+    flex: 1 1 25%;
   }
 }
 </style>
