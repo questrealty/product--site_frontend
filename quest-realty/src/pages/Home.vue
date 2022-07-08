@@ -1,34 +1,28 @@
 <script setup>
-import { ref } from 'vue';
+import Header from '../components/Header.vue';
+import Body from "../components/Body.vue"
 
 defineProps({
   msg: String
 })
 
-const count = ref(0)
 </script>
 
 <template>
-<header>
-  <img src="../assets/logo.png" alt="quest-realty-logo"/>
-  <ul>
-    <li>Home</li>
-     <li>About</li>
-      <li>For Sale</li>
-            <li>For Rent</li>
+<div class="home">
+<Header />
+<Body />
+</div>
 
-    
-  </ul>
-  <div>
-    <button>Login</button>
-        <button>Register</button>
-
-  </div>
-</header> 
 </template>
 
 <style scoped>
-a {
-  color: #42b983;
+.home{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: #fff;
+
+
 }
 </style>
