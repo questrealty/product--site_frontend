@@ -14,6 +14,6 @@ import HelloWorld from "./components/HelloWorld.vue";
 #app {
   font-family: "Poppins", sans-serif;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 14px;
 }
 </style>
