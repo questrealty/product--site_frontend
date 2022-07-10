@@ -36,16 +36,15 @@ const count = ref(0)
 <style scoped>
 .header{
   width: 100%;
+  left: 145px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 
 }
 header {
-width: 1150px;
 height: 76px;
-left: 145px;
-top: 54px;
+width: 950px;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -62,8 +61,8 @@ align-items: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-width: 1150px;
-line-height: 2.9;
+line-height: 3;
+width: 900px;
 
 
 }
@@ -75,13 +74,17 @@ margin: 0 1rem;
 .nav-button{
 display: flex;
 justify-content: flex-end;
+line-height: 2;
 }
 .nav-link, .nav-button{
   display: flex;
 }.nav-link li {
-  margin:0 2rem;
-  font-size: 1.5rem;
-  height:30px;
+  margin:0 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  height:40px;
+  color: var(--barley-40);
+  padding: 0  1rem;
 
 }
 
@@ -90,19 +93,21 @@ justify-content: flex-end;
   margin:0 1rem;
 }
 button{
-  width:76px;
 height:30px;
 left:1164px;
 border-radius:5px;
 font-size: 1.6rem;
+font-weight: 500;
 outline:none;
 }
 .login{
+  width: 80px;
   background-color: var(--barley-40);
   box-shadow: 0px 4px 4px 0px #00000024;
 color:var(--white);
 }
 .register{
+  width: 100px;
   background-color:#fff;
   color: var(--barley-40);
     box-shadow: 0px 4px 4px 0px #00000024;

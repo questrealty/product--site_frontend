@@ -22,6 +22,7 @@ defineProps({
   min-height: 100vh;
   position: relative;
   background-color: #fff;
+  top: 0;
 
 
 }
