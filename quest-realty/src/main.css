@@ -5,7 +5,7 @@
 --oslo-gray: #1A1B1E;
 --barley-10: #C2AA93;
 --barley-120: #EDE5DF;
---barley-40:#6D553E;
+--barley-40:#6d553e;
 --oslo-gray-120: #1A1B1D;
 --white:#e5e5e5;
 
@@ -15,6 +15,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html{
     font-size: 62.5%;
 }
