@@ -62,6 +62,11 @@ h1 {
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.479);
 }
 
+h3 {
+  margin: 24px 0 8px;
+  color: var(--barley-40);
+}
+
 button {
   padding: 16px 20px;
   color: white;
