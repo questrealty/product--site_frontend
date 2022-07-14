@@ -15,7 +15,6 @@ defineProps({
     <SecondSection />
     <OurServices />
     <Agents />
-    <Body />
   </div>
 </template>
 
