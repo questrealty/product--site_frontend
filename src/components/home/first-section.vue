@@ -3,7 +3,7 @@
     <div class="container">
       <div class="inner-container">
         <div class="image">
-          <img src="../../assets/Frame 290.png" alt="perfect-house" />
+          <img src="../../assets/Frame-290.png" alt="perfect-house" />
         </div>
         <div class="text">
           <div class="inner-text-container">
@@ -28,11 +28,7 @@
           </div>
           <div class="details">
             <p>Choose State</p>
-            <img
-              src="../../assets/down-arrow.png"
-              alt="Down Arrow"
-              width="14"
-            />
+            <img src="../../assets/down-arrow.png" alt="Down Arrow" />
           </div>
         </div>
         <div class="banner-item property-type">
@@ -42,11 +38,7 @@
           </div>
           <div class="details">
             <p>Choose Type</p>
-            <img
-              src="../../assets/down-arrow.png"
-              alt="Down Arrow"
-              width="14"
-            />
+            <img src="../../assets/down-arrow.png" alt="Down Arrow" />
           </div>
         </div>
         <div class="banner-item price-range">
@@ -56,11 +48,7 @@
           </div>
           <div class="details">
             <p>Choose price</p>
-            <img
-              src="../../assets/down-arrow.png"
-              alt="Down Arrow"
-              width="14"
-            />
+            <img src="../../assets/down-arrow.png" alt="Down Arrow" />
           </div>
         </div>
         <div class="banner-item search">
@@ -79,15 +67,13 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 60px;
+  margin: 80px 0 120px;
 }
 
 img {
   max-width: 100%;
 }
 .text {
-  /* padding: 0px 32px; */
-
   display: flex;
   justify-content: center;
 }
@@ -122,7 +108,7 @@ button {
   justify-content: center;
   flex-wrap: wrap;
   padding: 4px 12px;
-  margin-bottom: 120px;
+  margin: 120px 0;
 }
 
 .banner-item {
@@ -138,6 +124,7 @@ h3 {
 }
 
 .details > img {
+  width: 10px;
   height: 10px;
   margin-left: 2px;
 }
