@@ -3,6 +3,7 @@ import FirstSection from "../components/home/first-section.vue";
 import SecondSection from "../components/home/second-section.vue";
 import OurServices from "../components/home/OurServices.vue";
 import Agents from "../components/home/Agents.vue";
+import FeaturedProperties from "../components/home/FeaturedProperties.vue";
 
 defineProps({
   msg: String,
@@ -15,6 +16,7 @@ defineProps({
     <SecondSection />
     <OurServices />
     <Agents />
+    <FeaturedProperties />
   </div>
 </template>
 

@@ -37,8 +37,7 @@ export default {
   width: 100%;
   font-family: "Poppins", sans-serif;
   background-color: #ede5df;
-  padding: 16px 20px;
-  margin-bottom: 120px;
+  padding: 16px 20px 120px;
 }
 
 h3 {

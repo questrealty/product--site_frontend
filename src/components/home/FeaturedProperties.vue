@@ -1,20 +1,29 @@
 <template>
-  <div class="container">
-    <div>
-      <h1>Our Featured Properties</h1>
-      <p>
+  <div class="container flex">
+    <div class="inner-container">
+      <h1 class="topic">Our Featured Properties</h1>
+      <p class="sub-topic">
         This shows the list of our featured properties, they inlclude houses for
         sale and apartments for rent.
       </p>
-      <div>
-        <div class="properties">
-          <img src="" alt="" />
-          <div class="flex">
+      <div class="properties-container">
+        <div
+          class="properties flex"
+          v-for="(property, index) in featuredProperties"
+          :key="index"
+        >
+          <img :src="`../../assets/${property.image}.png`" alt="" />
+          <div class="property-info flex">
             <div class="details">
-              <h4>5 Bedroom Bungalow</h4>
-              <p>104 Banana</p>
+              <h4>{{ property.propertyType }}</h4>
+              <p>{{ property.location }}</p>
             </div>
-            <div class="pricing"></div>
+            <div class="pricing flex">
+              <h3>{{ property.price }}</h3>
+              <p>{{ property.rooms }}</p>
+              <p>{{ property.toilets }}</p>
+              <p>{{ property.size }}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -87,4 +96,81 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  padding: 120px 0;
+}
+
+.inner-container {
+  width: 90%;
+}
+
+.topic,
+.sub-topic {
+  text-align: center;
+}
+.properties {
+  width: 100%;
+  padding: 16px 4px;
+  flex-direction: column;
+  margin-top: 80px;
+  background-color: #fff;
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.363);
+  border-radius: 8px 56px;
+}
+
+img {
+  width: 100%;
+}
+
+.property-info {
+  padding: 12px;
+  width: 100%;
+}
+
+.pricing {
+  flex-direction: column;
+}
+
+.details,
+.pricing {
+  width: 50%;
+}
+
+.details > p,
+.pricing > p {
+  font-size: 12px;
+}
+@media (min-width: 700px) {
+  .properties-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .properties {
+    flex: 1 1 45%;
+    margin-right: 12px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .properties {
+    flex: 1 1 30%;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .properties {
+    flex: 1 1 30%;
+    margin-right: 20px;
+  }
+}
+</style>
