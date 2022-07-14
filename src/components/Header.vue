@@ -89,10 +89,11 @@ header {
   position: absolute;
   width: 200px;
   bottom: -190px;
-  right: 10px;
+  right: -12px;
   border: 1px solid rgba(212, 212, 212, 0.842);
   animation-name: menu;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
+  background-color: #fff;
 }
 
 @keyframes menu {

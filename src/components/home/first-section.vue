@@ -83,6 +83,7 @@ img {
 
 h1 {
   margin-bottom: 24px;
+  font-weight: bold;
 }
 
 button {
@@ -160,6 +161,9 @@ h3 {
 @media (min-width: 1024px) {
   .banner-item {
     flex: 1 1 20%;
+  }
+  h1 {
+    font-size: 40px;
   }
 }
 </style>
