@@ -7,10 +7,23 @@
 --barley-120: #EDE5DF;
 --barley-40:#6D553E;
 --oslo-gray-120: #1A1B1D;
+--white:#e5e5e5;
 
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html{
+    width: 100%;
+}
+li{
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
