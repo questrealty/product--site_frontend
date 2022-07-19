@@ -1,7 +1,7 @@
 <script setup>
 import Header from '../components/Header.vue';
-import Body from "../components/Body.vue"
-
+import Body from "../components/Body.vue";
+import Reason from "../components/Reason.vue"
 defineProps({
   msg: String
 })
@@ -12,6 +12,8 @@ defineProps({
 <div class="home">
 <Header />
 <Body />
+<Reason />
+
 </div>
 
 </template>
@@ -20,9 +22,6 @@ defineProps({
 .home{
   width: 100%;
   min-height: 100vh;
-  position: relative;
-  background-color: #fff;
-  top: 0;
 
 
 }
